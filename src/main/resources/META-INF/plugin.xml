@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>com.krizej.ShellPipe</id>
+    <name>ShellPipe</name>
+    <version>1.0</version>
+    <vendor email="krizej@protonmail.com" url="https://github.com/krizej/ShellPipe">krizej</vendor>
+    <depends>com.intellij.modules.platform</depends>
+
+    <description><![CDATA[<h3>a worse alternative to <a href="https://plugins.jetbrains.com/plugin/11257-pipeprofen">pipeprofen</a></h3>
+<p>Why?
+<ol>
+<li>1. because i didnt know about pipeprofen when i made this</li>
+<li>2. because pipeprofen starts in your home dir, this starts in the project dir</li>
+</ol></p>
+]]></description>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action class="com.krizej.ShellPipe.ShellPipe" id="ShellPipe.ShellPipe" text="ShellPipe" description="ShellPipe"/>
+    </actions>
+</idea-plugin>
