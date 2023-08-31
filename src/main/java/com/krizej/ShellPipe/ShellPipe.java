@@ -4,8 +4,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
-import com.intellij.icons.AllIcons;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.CommonDataKeys;
@@ -55,10 +53,13 @@ public class ShellPipe extends AnAction {
         int start = primaryCaret.getSelectionStart();
         int end = primaryCaret.getSelectionEnd();
 
-        String cmd = Messages.showInputDialog(project, "Run", "ShellPipe", null);
+        ShellPipePopup p = new ShellPipePopup("Run", "ShellPipe");
+        String cmd = p.getInputString();
 
         if(cmd == null)
             return;
+
+        HistoryService.getInstance().addString(cmd);
 
         String input = document.getText(new TextRange(start, end));
 
