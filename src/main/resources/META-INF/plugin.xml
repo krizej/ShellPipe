@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.krizej.ShellPipe</id>
     <name>ShellPipe</name>
-    <version>1.0</version>
+    <version>1.1</version>
     <vendor email="krizej@protonmail.com" url="https://github.com/krizej/ShellPipe">krizej</vendor>
     <depends>com.intellij.modules.platform</depends>
 
