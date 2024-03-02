@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.krizej.ShellPipe</id>
+    <name>ShellPipe</name>
+    <vendor email="krizej@protonmail.com" url="https://github.com/krizej">krizej</vendor>
+
+    <description><![CDATA[
+    allows you to pipe selected text into a shell command and replaces it with the output
+  ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="com.krizej.shellpipe.ShellPipe" class="com.krizej.shellpipe.ShellPipe" text="ShellPipe"/>
+    </actions>
+</idea-plugin>
